@@ -1,7 +1,7 @@
 <?php
 
 // panggil file PropertyConstant
-require('./PropertyConstans.php');
+require('./PropertyConstant.php');
 
 use Pbo\Marketplace\Produk;
 
@@ -14,19 +14,16 @@ $produk->setKode('P0001')
        ->setStok(5);
 
 //Hasil
-echo "Produk: " . $produk->getNama();
+echo "Produk: ". $produk->getNama();
 echo "<br/>";
 
-echo "Harga: " . $produk->getHarga();
+echo "Harga: ". $produk->getHarga();
 echo "<br/>";
 
-echo "Stok: " . $produk->getStok();
+echo "Stok: ". $produk->getStok();
 echo "<br/>";
 
-echo "Pajak: " . $produk->pajak() ."%";
+echo "Pajak: ". $produk->pajak() . "%";
 echo "<br/>";
 echo "<br/>";
-
 echo "Total harga setelah pajak: Rp." . $produk->total();
-
-?>
